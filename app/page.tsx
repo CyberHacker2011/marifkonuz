@@ -4,7 +4,7 @@ import Button from './(components)/button'
 const HomePage = function () {
   return (
     <>
-      <div className='relative w-full h-124 opacity-90 bg-black'>
+      <div className='relative w-full h-96 md:h-124 opacity-90 bg-black'>
         <Image 
           src={'/education.jpg'}
           alt='Image of education for Marifkonuz'
@@ -12,8 +12,8 @@ const HomePage = function () {
           priority={true}
         />
         <div className='absolute w-full h-full bg-black opacity-70'></div>\
-        <div className='absolute flex flex-col gap-y-8 w-full h-full px-20 py-12'>
-          <h1 className='text-5xl md:text-6xl font-bold text-gray-100 font-sans '>
+        <div className='absolute flex flex-col gap-y-8 w-full h-full px-12 py-8 md:px-20 md:py-12'>
+          <h1 className='text-4xl md:text-6xl font-bold text-gray-100 font-sans '>
             Learning today,<br />
             Leading tomorrow
           </h1>
