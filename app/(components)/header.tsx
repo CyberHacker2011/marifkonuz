@@ -61,7 +61,7 @@ const Header = () => {
               </Link>
             </li>
           </ul>
-          <select className='absolute right-16 inline-block md:static ring-0 outline-none'>
+          <select className='absolute right-16 inline-block md:static bg-transparent outline-none'>
             <option>uz</option>
             <option>en</option>
             <option>ru</option>
