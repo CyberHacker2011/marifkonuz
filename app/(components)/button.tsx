@@ -24,7 +24,7 @@ const Button: React.FC<ButtonProps> = ({
   const sizeClasses = {
     sm: 'py-1 px-3 text-sm max-w-28',
     md: 'py-2 px-4 text-base max-w-32',
-    lg: 'py-3 px-6 text-lg max-w-36',
+    lg: 'md:py-3 py-2 md:px-6 px-4 md:text-lg text-base max-w-36',
   };
   
   // Button color classes
@@ -41,7 +41,7 @@ const Button: React.FC<ButtonProps> = ({
 
   if (version === 'link' && href) {
     return (
-      <Link href={href} className={buttonClass}>
+      <Link href={href} className={`inline-flex items-center justify-center ${buttonClass}`}>
         {children}
       </Link>
     );

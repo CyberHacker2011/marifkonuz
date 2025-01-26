@@ -3,18 +3,9 @@ import Image from 'next/legacy/image'
 import Link from 'next/link'
 const AboutPage = () => {
   
-  const dosome = ()=>{
-    let res = 0;
-    for(let i =0;i<=1000; i++ ){
-      i=i**2
-      res*=i
-    }
-    return res
-  }
-  dosome();
   return (
     <>
-        <div className='grid grid-cols-1 md:grid-cols-2 p-5'>
+        <div className='grid lg:grid-rows-1 grid-rows-2 grid-cols-1 lg:grid-cols-2 p-5'>
           <div className='flex flex-col gap-2 px-10 py-5 justify-center text-gray-900'>
             <h1 className='text-3xl font-bold '>What is <q>Marifkon<sub>uz</sub></q> and who works there</h1>
             <p className='font-sans text-lg'>

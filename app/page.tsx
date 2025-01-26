@@ -12,15 +12,15 @@ const HomePage = function () {
           priority={true}
         />
         <div className='absolute w-full h-full bg-black opacity-70'></div>\
-        <div className='absolute flex flex-col gap-y-6 w-full h-full px-20 py-12'>
-          <h1 className='text-6xl font-bold text-gray-100 font-sans '>
+        <div className='absolute flex flex-col gap-y-8 w-full h-full px-20 py-12'>
+          <h1 className='text-5xl md:text-6xl font-bold text-gray-100 font-sans '>
             Learning today,<br />
             Leading tomorrow
           </h1>
           <p className='text-xl font-light text-white'> 
             Our team <b>Marifkon<sub>uz</sub></b> is here to help reach your goals and learning.
           </p> 
-          <Button href='/login' version='link' size="lg" color='transparent' className='inline-block border-2 border-white rounded-2xl '>Get started</Button>
+          <Button href='/login' version='link' size="lg" color='transparent' className=' border-2 border-white rounded-2xl '>Get started</Button>
         </div>
       </div>
 
