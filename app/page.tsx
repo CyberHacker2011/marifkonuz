@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import Button from './(components)/button'
 const HomePage = function () {
   return (
@@ -8,8 +8,8 @@ const HomePage = function () {
         <Image 
           src={'/education.jpg'}
           alt='Image of education for Marifkonuz'
-          loading={'lazy'}
           layout='fill'
+          priority={true}
         />
         <div className='absolute w-full h-full bg-black opacity-70'></div>\
         <div className='absolute flex flex-col gap-y-6 w-full h-full px-20 py-12'>
@@ -17,10 +17,10 @@ const HomePage = function () {
             Learning today,<br />
             Leading tomorrow
           </h1>
-          <p className='text-xl font-light text-white'>
-            Our team Marifkon<sub>uz</sub> is here to help reach your goals and learning.
+          <p className='text-xl font-light text-white'> 
+            Our team <b>Marifkon<sub>uz</sub></b> is here to help reach your goals and learning.
           </p> 
-          <Button href='/login' version='link' size="lg" color='transparent' className='inline-block border-2 border-white rounded-3xl '>Get started</Button>
+          <Button href='/login' version='link' size="lg" color='transparent' className='inline-block border-2 border-white rounded-2xl '>Get started</Button>
         </div>
       </div>
 
