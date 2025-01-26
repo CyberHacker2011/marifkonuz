@@ -8,9 +8,11 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      height: {
+        '124': '31rem',
+        '192': '48rem',  
+        '256': '64rem',
+        '300': '75rem',  
       },
     },
   },
