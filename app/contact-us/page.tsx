@@ -1,11 +1,18 @@
 import React from 'react'
-import Link from 'next/link'
+import Card from '../(components)/card'
 const ContactPage = () => {
   return (
     <>
-        <h1>You can contact us through :</h1>
-        <Link href={'https://t.me/marifkonuz'}>Telegram</Link><br />
-        <Link href={'https://ibrohimshaymardanov@gmail.com'}>Gmail</Link>
+        <div className="flex flex-col justify-center p-5 md:p-7">
+          {/* <h1 className="text-2xl font-bold ">You can contact us through:</h1>
+          <p>
+          <Link href={'https://t.me/marifkonuz'} className="text-lg hover:text-blue-600 ">Telegram</Link>
+          </p>
+          <p>
+          <Link href={"https://mail.google.com/mail/?view=cm&fs=1&to=marifkonuz@gmail.com"}>Gmail</Link>
+          </p>   */}
+          <Card />
+        </div>
     </>
   )
 }
