@@ -6,13 +6,12 @@ const AboutPage = () => {
   return (
     <>
         <div className='grid lg:grid-rows-1 grid-rows-2 grid-cols-1 lg:grid-cols-2 p-5 gap-3'>
-          <div className='flex flex-col gap-2 px-3 md:px-10 py-5  items-center justify-center text-start text-gray-900'>
+          <div className='flex flex-col gap-2 px-3 md:px-10 py-5  justify-center text-start text-gray-900'>
             <h1 className=' text-2xl md:text-3xl font-bold '>What is <q>Marifkon<sub>uz</sub></q> and who works there</h1>
             <p className='font-sans text-base md:text-lg'>
               Our project is designed to provide educational resources, courses and informations on various topics. Here, you can find valuable knowledge ranging from basic shool subjects to additional extracurricular studies and beyond.
             </p>
             <div>
-              
             <p className='font-sans text-base md:text-lg'>
             Our team contains school students from Uzbekistan. They are:
             </p>
@@ -41,6 +40,7 @@ const AboutPage = () => {
               alt='Picture of our group'
               layout='fill'
               priority={true}
+              className='rounded-md'
             />
           </div>
           

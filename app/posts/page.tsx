@@ -1,9 +1,11 @@
 import React from 'react'
-
+import Post from '../(components)/post'
 const PostsPage = () => {
   return (
     <>
-        <h1>Here you can see some of our Posts:</h1>
+      <div className='grid grid-cols-3 p-7'> 
+          <Post />
+      </div>
     </>
   )
 }
