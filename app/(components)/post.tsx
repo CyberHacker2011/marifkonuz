@@ -35,13 +35,13 @@ const Post: React.FC<PostProps> = ({
     <>
       
         <Link href={`/posts/${post.id}`} >
-            <div className='flex shadow-lg px-4 py-5 flex-col gap-2 '>
+            <div className='flex shadow-lg bg-gray-50 bg-opacity-70 p-7 flex-col gap-2 text-gray-800'>
                 <div className='flex flex-col items-center justify-center'>  
                     <h1 className=' text-xl md:text-2xl font-bold '>{post.title}</h1>
                     <p className='font-thin'>{post.author}</p>
                 </div>
                 <p>
-                    {getSnippet(post.body,250)}...
+                    {getSnippet(post.body,250)}...Read more
                 </p>
             </div>
         </Link>

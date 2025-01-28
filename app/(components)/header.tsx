@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import React, { useState } from 'react';
 import Link from 'next/link';
 
@@ -8,13 +8,20 @@ const Header = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <>
       <header className="flex justify-between items-center p-7 shadow-md bg-white">
         {/* Logo */}
-        <p className="text-2xl font-bold select-none">Marifkon<sub>uz</sub></p>
+        <Link href="/">
+          <p className="text-2xl font-bold select-none">Marifkon<sub>uz</sub></p>
+        </Link>
         
-        <div className='flex space-x-5 items-center'>
+        <div className="flex space-x-5 items-center">
           {/* Hamburger Menu for Mobile */}
           <button
             className="block md:hidden text-2xl"
@@ -30,38 +37,38 @@ const Header = () => {
               isMenuOpen ? 'block' : 'hidden'
             }`}
           >
-            <li>
-              <Link href="/" className="block hover:text-blue-600">
+            <li onClick={closeMenu}>
+              <Link href="/" className="block hover:text-blue-600" >
                 Home
               </Link>
             </li>
-            <li>
-              <Link href="/about" className="block hover:text-blue-600">
+            <li onClick={closeMenu}>
+              <Link href="/about" className="block hover:text-blue-600" >
                 About
               </Link>
             </li>
-            <li>
-              <Link href="/posts" className="block hover:text-blue-600">
+            <li onClick={closeMenu}>
+              <Link href="/posts" className="block hover:text-blue-600" >
                 Posts
               </Link>
             </li>
             <li>
-              <Link href="/courses" className="block hover:text-blue-600">
+              <Link href="/courses" className="block hover:text-blue-600" onClick={closeMenu}>
                 Courses
               </Link>
             </li>
             <li>
-              <Link href="/resources" className="block hover:text-blue-600">
+              <Link href="/resources" className="block hover:text-blue-600" onClick={closeMenu}>
                 Resources
               </Link>
             </li>
-            <li>
-              <Link href="/contact-us" className="block hover:text-blue-600">
+            <li onClick={closeMenu}>
+              <Link href="/contact-us" className="block hover:text-blue-600" >
                 Contact us
               </Link>
             </li>
           </ul>
-          <select className='absolute right-16 inline-block md:static bg-transparent outline-none'>
+          <select className="absolute right-16 inline-block md:static bg-transparent outline-none">
             <option>uz</option>
             <option>en</option>
             <option>ru</option>
