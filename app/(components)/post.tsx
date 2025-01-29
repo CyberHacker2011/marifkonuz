@@ -2,16 +2,16 @@ import React from 'react'
 import Link from 'next/link'
 import PostsList from '@/api/posts'
 type PostProps = {
-    id: number,
+    id: string,
 }
 type PostListType = {
-    id: number;
+    id: string;
     title: string;
     author: string;
     body: string;
   };
 const defaultPost: PostListType = {
-  id: 0,
+  id: '1',
   title: "Default Title",
   author: "Anonymous",
   body: "This is a default post body.",
@@ -25,10 +25,10 @@ const getSnippet = (text: string, limit: number): string => {
   return lastSpaceIndex > -1 ? snippet.slice(0, lastSpaceIndex) : snippet; // Trim to the last word if possible.
 };
 const Post: React.FC<PostProps> = ({
-    id = 1
+    id = '1'
 }: PostProps) => {
   
-  const post = PostsList.find((p: PostListType) => p.id === Number(id)) || defaultPost;
+  const post = PostsList.find((p: PostListType) => p.id === id) || defaultPost;
   
 
   return (

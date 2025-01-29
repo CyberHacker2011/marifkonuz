@@ -2,7 +2,7 @@ import React from "react";
 import PostsList from "@/api/posts";
 
 type PostListType = {
-  id: number;
+  id: string;
   title: string;
   author: string;
   body: string;
@@ -14,7 +14,7 @@ type ParamsType = {
 
 const PostPage = async ({ params }: ParamsType) => {
   const { postid } = await params; 
-  const post = PostsList.find((p: PostListType) => p.id === Number(postid)); 
+  const post = PostsList.find((p: PostListType) => p.id === postid); 
 
   if (!post) {
     return <div>Post not found</div>;

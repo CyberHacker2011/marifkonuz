@@ -10,7 +10,7 @@ const PostsPage = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14 max-w-6xl">
       {postData.map((post)=>(
         <Post 
-        id={Number(post.id)}
+        id={post.id}
         key={post.id}
         />
       ))
