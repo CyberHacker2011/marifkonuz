@@ -24,9 +24,7 @@ const getSnippet = (text: string, limit: number): string => {
 
   return lastSpaceIndex > -1 ? snippet.slice(0, lastSpaceIndex) : snippet; // Trim to the last word if possible.
 };
-const Post: React.FC<PostProps> = ({
-    id = '1'
-}: PostProps) => {
+const Post = ({id}:PostProps) => {
   
   const post = PostsList.find((p: PostListType) => p.id === id) || defaultPost;
   

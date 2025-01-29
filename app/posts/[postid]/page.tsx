@@ -12,8 +12,8 @@ type ParamsType = {
   params: { postid: string };
 };
 
-const PostPage = async ({ params }: ParamsType) => {
-  const { postid } = await params; 
+const PostPage = ({ params }: ParamsType) => {
+  const { postid } =  params; 
   const post = PostsList.find((p: PostListType) => p.id === postid); 
 
   if (!post) {
