@@ -27,13 +27,19 @@ const ContactPage = () => {
         <Card
           image="/asadbek.jpg"
           name="Asadbek"
-          job="Worker"
+          job="Adminstration"
           describtion="Good boy with good knowledges in any subject. Interested subjects: Science, Math, Computer Science."
         />
         <Card
           image="/diyorbek.jpg"
           name="Diyorbek"
-          job="Worker"
+          job="Councillor"
+          describtion="Good boy with good knowledges in any subject. Interested subjects: Science, Math, Computer Science."
+        />
+        <Card
+          image="/akbarxo'ja.jpg"
+          name="Akbarxo'ja"
+          job="Great student || Worker"
           describtion="Good boy with good knowledges in any subject. Interested subjects: Science, Math, Computer Science."
         />
       </div>
