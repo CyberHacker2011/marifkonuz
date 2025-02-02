@@ -27,7 +27,7 @@ const PostPage = () => {
         <p className="font-thin">
           <span className="font-bold">Author:</span> {post.author}
         </p>
-        <p>{post.body}</p>
+        <p className="whitespace-pre-line">{post.body}</p>
       </div>
     </div>
   );

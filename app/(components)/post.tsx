@@ -33,13 +33,13 @@ const Post = ({id}:PostProps) => {
     <>
       
         <Link href={`/posts/${post.id}`} >
-            <div className='flex shadow-lg bg-gray-50 bg-opacity-70 p-7 flex-col gap-2 text-gray-800'>
+            <div className='flex shadow-lg bg-gray-50 bg-opacity-70 p-7 flex-col gap-2 text-gray-800 h-72'>
                 <div className='flex flex-col items-center justify-center'>  
                     <h1 className=' text-xl md:text-2xl font-bold '>{post.title}</h1>
                     <p className='font-thin'>{post.author}</p>
                 </div>
                 <p>
-                    {getSnippet(post.body,250)}...Read more
+                    {getSnippet(post.body,235)}<span className='hover:text-blue-500 font-bold text-gray-900'>...Read more</span>
                 </p>
             </div>
         </Link>
