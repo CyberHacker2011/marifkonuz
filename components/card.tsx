@@ -1,7 +1,10 @@
 import Link from 'next/link';
 import React from 'react';
 import Image from 'next/legacy/image';
-
+import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaTelegram } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
 type CardProps = {
   image: string;
   name: string;
@@ -51,42 +54,22 @@ const Card: React.FC<CardProps> = ({
         <div className="flex items-center justify-center gap-4 mt-3">
           {twitter && (
             <Link href={twitter} className="opacity-80 hover:opacity-60">
-              <Image
-                src="/twitter.svg"
-                alt="twitter logo"
-                width={20}
-                height={20}
-              />
+              <FaXTwitter />
             </Link>
           )}
           {telegram && (
             <Link href={telegram} className="opacity-80 hover:opacity-60">
-              <Image
-                src="/telegram.svg"
-                alt="telegram logo"
-                width={20}
-                height={20}
-              />
+              <FaTelegram />
             </Link>
           )}
           {linkedin && (
             <Link href={linkedin} className="opacity-80 hover:opacity-60">
-              <Image
-                src="/linkedin.svg"
-                alt="linkedin logo"
-                width={20}
-                height={20}
-              />
+              <FaLinkedin />
             </Link>
           )}
           {youtube && (
             <Link href={youtube} className="opacity-80 hover:opacity-60">
-              <Image
-                src="/youtube.svg"
-                alt="youtube logo"
-                width={20}
-                height={20}
-              />
+              <FaYoutube />
             </Link>
           )}
         </div>

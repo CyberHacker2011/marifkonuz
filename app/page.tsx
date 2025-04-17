@@ -1,6 +1,10 @@
-import React from 'react'
-import Image from 'next/legacy/image'
-import Button from './(components)/button'
+import React from 'react';
+import Image from 'next/legacy/image';
+import { Button } from '../components/ui/button';
+import { 
+  SignUpButton,
+  SignedOut,
+} from '@clerk/nextjs';
 const HomePage = function () {
   return (
     <>
@@ -20,7 +24,13 @@ const HomePage = function () {
           <p className='text-xl font-light text-white'> 
             Our team <b>Marifkon<sub>uz</sub></b> is here to help reach your goals and learning.
           </p> 
-          <Button href='/login' version='link' size="lg" color='transparent' className=' border-2 border-white rounded-2xl '>Get started</Button>
+          <div className='flex '>
+            <SignedOut>
+              <SignUpButton> 
+                <Button size="lg" variant="ghost" className='border-2 text-white'>Get started</Button>
+              </SignUpButton>
+            </SignedOut>
+          </div>
         </div>
       </div>
 
