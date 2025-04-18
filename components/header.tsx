@@ -70,7 +70,7 @@ const Header = () => {
             </li>
             <li onClick={closeMenu} className="flex gap-2">
               <SignedOut>
-                <SignInButton>
+                <SignInButton mode="modal">
                   <Button variant="ghost">Sign in</Button>
                 </SignInButton>
               </SignedOut>

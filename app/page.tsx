@@ -26,7 +26,7 @@ const HomePage = function () {
           </p> 
           <div className='flex '>
             <SignedOut>
-              <SignUpButton> 
+              <SignUpButton mode="modal"> 
                 <Button size="lg" variant="ghost" className='border-2 text-white'>Get started</Button>
               </SignUpButton>
             </SignedOut>
